@@ -8,7 +8,8 @@
     "frontend"
   ],
   "engines": {
-    "npm": "7.9.0"
+    "npm": "7.9.0",
+    "node": "14.x"
   },
   "main": "index.js",
   "scripts": {
@@ -17,7 +18,8 @@
     "dev:api": "npm run build && npm run dev --workspace=backend",
     "lint": "eslint ./backend ./frontend",
     "lint:fix": "npm run lint -- --fix",
-    "prettier": "prettier --write './**/*.{ts,js,css,html}'"
+    "prettier": "prettier --write './**/*.{ts,js,css,html}'",
+    "heroku": "git push heroku master:main"
   },
   "keywords": [],
   "author": "",
