@@ -12,6 +12,7 @@
   },
   "main": "index.js",
   "scripts": {
+    "prestart": "npm run postinstall --workspace=backend",
     "build": "SKIP_PREFLIGHT_CHECK=true npm run build --workspace=frontend",
     "start": "npm run start --workspace=backend",
     "dev:api": "npm run build && npm run dev --workspace=backend",

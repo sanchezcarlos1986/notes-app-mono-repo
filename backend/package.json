@@ -9,7 +9,6 @@
     "start:test": "NODE_ENV=test babel-node index.js",
     "test": "NODE_ENV=test jest --verbose",
     "test:watch": "npm run test -- --watch",
-    "heroku": "git push heroku master",
     "postinstall": "link-module-alias"
   },
   "keywords": [],
