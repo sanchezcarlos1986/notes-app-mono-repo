@@ -8,8 +8,7 @@
     "frontend"
   ],
   "engines": {
-    "npm": "7.9.0",
-    "node": "14.x"
+    "npm": "7.9.0"
   },
   "main": "index.js",
   "scripts": {
