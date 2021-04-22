@@ -1,7 +1,7 @@
 const notFound = (request, response) => {
   response.status(404).json({
-    error: "Not found...",
-  });
-};
+    error: 'Not found...'
+  })
+}
 
-export default notFound;
+export default notFound

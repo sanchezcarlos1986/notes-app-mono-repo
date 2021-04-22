@@ -14,12 +14,16 @@
   "scripts": {
     "build": "SKIP_PREFLIGHT_CHECK=true npm run build --workspace=frontend",
     "start": "npm run start --workspace=backend",
-    "dev:api": "npm run build && npm run dev --workspace=backend"
+    "dev:api": "npm run build && npm run dev --workspace=backend",
+    "lint": "eslint ./backend ./frontend",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "prettier --write './**/*.{ts,js,css,html}'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "eslintConfig": {
+    "ignorePatterns": "build",
     "env": {
       "cypress/globals": true,
       "jest": true
@@ -31,9 +35,23 @@
   },
   "devDependencies": {
     "eslint-plugin-cypress": "2.11.2",
+    "husky": "4.2.5",
+    "lint-staged": "10.2.11",
+    "prettier": "^2.2.1",
     "standard": "16.0.3"
   },
   "dependencies": {
     "eslint": "^7.24.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./**/*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   }
 }

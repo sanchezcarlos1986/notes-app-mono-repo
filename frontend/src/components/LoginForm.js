@@ -2,7 +2,7 @@ import React from 'react'
 import Togglable from './Togglable.js'
 import PropTypes from 'prop-types'
 
-export default function LoginForm ({handleSubmit, ...props}) {
+export default function LoginForm ({ handleSubmit, ...props }) {
   return (
     <Togglable buttonLabel='Show Login'>
       <form onSubmit={handleSubmit}>
@@ -24,9 +24,7 @@ export default function LoginForm ({handleSubmit, ...props}) {
             onChange={props.handlePasswordChange}
           />
         </div>
-        <button id='form-login-button'>
-          Login
-        </button>
+        <button id='form-login-button'>Login</button>
       </form>
     </Togglable>
   )
@@ -34,6 +32,5 @@ export default function LoginForm ({handleSubmit, ...props}) {
 
 LoginForm.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
-  username: PropTypes.string,
-
+  username: PropTypes.string
 }

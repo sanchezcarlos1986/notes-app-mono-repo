@@ -1,18 +1,18 @@
-import express from "express";
-import Note from "~models/Note";
-import User from "~models/User";
+import express from 'express'
+import Note from '~models/Note'
+import User from '~models/User'
 
-const router = express.Router();
+const router = express.Router()
 
-router.post("/reset", async (request, response, next) => {
+router.post('/reset', async (request, response, next) => {
   try {
-    await Note.deleteMany({});
-    await User.deleteMany({});
+    await Note.deleteMany({})
+    await User.deleteMany({})
 
-    response.status(204).end();
+    response.status(204).end()
   } catch (error) {
-    next(error);
+    next(error)
   }
-});
+})
 
-export default router;
+export default router
