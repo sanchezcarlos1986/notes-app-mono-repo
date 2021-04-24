@@ -7,7 +7,7 @@
     "dev": "NODE_ENV=development nodemon --exec babel-node -- index.js",
     "start": "NODE_ENV=production babel-node -- index.js",
     "start:test": "NODE_ENV=test babel-node index.js",
-    "test": "NODE_ENV=test jest --verbose",
+    "test": "NODE_ENV=test PORT=8080 jest --verbose",
     "test:watch": "npm run test -- --watch",
     "postinstall": "link-module-alias"
   },

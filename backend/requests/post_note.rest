@@ -1,6 +1,6 @@
 POST http://localhost:3001/api/notes/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNzhkN2ZkN2RmNDk3MDc3Njc1ZTdjZiIsInVzZXJuYW1lIjoic2FuY2hlemNhcmxvcyIsImlhdCI6MTYxODU5MjM3OH0.Ff0prALynZj_srrBQOSVwBGcfSGYg1GH5Sr90wL-zPA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwODA5NjU2MDNiYTkzNTgwYTEyOGYxMCIsInVzZXJuYW1lIjoic2FuY2hlemNhcmxvcyIsImlhdCI6MTYxOTI5OTA2OCwiZXhwIjoxNjE5OTAzODY4fQ.SVJsuopgP5EL6wCaVeutddaJcpHHLUfMJMypSdEZ4FA
 
 {
     "content": "Aquí tranqui aprendiendo Node!",
